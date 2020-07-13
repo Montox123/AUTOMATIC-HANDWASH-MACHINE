@@ -1,0 +1,173 @@
+@import 'utilities.css';
+body{
+    height: 2500px;
+    background: var(--four);
+}
+:root{
+    --first:#25c3c9;
+    --dark:#161616;
+    --sec:#FFFFFF;
+    --Trd:#898989;
+    --four:#F2F2F2;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing:antialiased;
+}
+
+header{
+    background: rgb(232, 252, 232);
+    
+    
+    
+}
+.container{
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+header nav .left a{
+    color: var(--dark);
+    text-decoration: none;
+    margin: 2rem;
+}
+header nav .left a:hover{
+    color: var(--first);
+    background: rgb(156, 233, 156);
+}
+header nav{
+    padding: 2rem 0;
+}
+.pic .center h1{
+    color:var(--first);
+    margin-bottom: 0.5rem;
+    font-weight: 2000;
+    font-style: italic;
+    font: outline;
+    line-height: 2;
+    background: rgb(241, 240, 240);
+    text-align: center;
+}
+.pic .center img{
+    height: 10cm;
+    width: 10cm;
+    border: black;
+}
+.pic .right h1{
+    color: var(--first);
+    background: rgb(241, 240, 240);
+    line-height: 1.5;
+    text-align: center;
+}
+.left .branding img{
+    height: 4cm;
+    width: 5cm;
+}
+
+.section-heading{
+    color: var(--first);
+    text-align: center;
+    margin-bottom: 2rem;
+    line-height: 2rem;
+    background: rgb(241, 240, 240);
+}
+
+.section-heading + p{
+    color: #161515;
+    font-family: 'lato',sans-serif;
+    margin-bottom: 7rem;
+    text-align: center;
+    background:rgb(241, 240, 240);
+}
+
+.card-wrapper .card img{
+    height: 3cm;
+    width: 5cm;
+}
+section.HARDWARES{
+    background: rgb(232, 252, 232);
+}
+
+section.HARDWARES .card-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap:3rem ;
+    grid-row-gap:5rem ;
+
+}
+
+section.HARDWARES .card-wrapper .card{
+    background: rgb(240, 238, 238);
+    padding: 3rem 2rem;
+    position: relative;
+    padding-top: 6rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+section.HARDWARES .card-wrapper .card img{
+    position: absolute;
+    top: -4.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+section.HARDWARES .card-wrapper .card:hover{
+    background: var(--dark);
+
+}
+
+section.HARDWARES .card-wrapper .card:hover h2 {
+    color: var(--first);
+}
+
+section.HARDWARES .card-wrapper .card:hover p {
+    color: var(--four);
+}
+
+section.contact .card-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+section.contact .card-wrapper .card{
+    text-align: center;
+}
+section.contact{
+    background:rgb(232, 252, 232);
+}
+section.contact .card-wrapper .card img{
+    margin-bottom: 2rem;
+}
+section.contact .card-wrapper .card h6{
+    font-size: 1rem;
+    color: var(--Trd);
+    margin-bottom: 6rem;
+} 
+section.contact .input-wrap{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    margin-bottom: 3rem;
+}  
+section.contact .input-wrap-2{
+    display: flex;
+    flex-direction: column;
+}
+section.contact input{
+    padding: 0.7rem;
+}
+section.contact .input-wrap-2 input{
+    margin-bottom: 2rem;
+}
+section.contact .btn-wrapper{
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+section.contact .container h1{
+    text-align: center;
+    margin-bottom: 2rem;
+    
+}
